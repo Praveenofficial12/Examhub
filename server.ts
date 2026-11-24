@@ -39,9 +39,8 @@ app.get(['/download/:filename', '/api/download/:filename'], (req, res) => {
 });
 
 // MongoDB Atlas Connection URI provided by user
-const MONGO_URI =
-  process.env.MONGODB_URI ||
-  'mongodb+srv://praveenkrisk1204_db_user:HocBWIoT5CMcWBm0@cluster0.orgon1o.mongodb.net/?retryWrites=true&w=majority';
+// Configure MONGODB_URI in Vercel Project Settings; never commit database credentials.
+const MONGO_URI = process.env.MONGODB_URI || '';
 
 // In-memory fallback and file persistence for sessions
 const SESSIONS_CACHE_FILE = path.resolve(process.cwd(), '.sessions_cache.json');
@@ -133,6 +132,12 @@ const mongoStatus: MongoStatus = {
 
 async function initMongoConnection() {
   mongoStatus.lastAttemptAt = new Date().toISOString();
+  if (!MONGO_URI) {
+    mongoStatus.connected = false;
+    mongoStatus.status = 'offline';
+    mongoStatus.lastError = 'MONGODB_URI environment variable is not configured';
+    return;
+  }
   try {
     mongoClient = new MongoClient(MONGO_URI, {
       serverSelectionTimeoutMS: 4000,
