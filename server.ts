@@ -140,8 +140,8 @@ async function initMongoConnection() {
   }
   try {
     mongoClient = new MongoClient(MONGO_URI, {
-      serverSelectionTimeoutMS: 4000,
-      tlsAllowInvalidCertificates: true
+      serverSelectionTimeoutMS: 8000,
+      maxPoolSize: 5
     });
     await mongoClient.connect();
     mongoDb = mongoClient.db('vsbec_exam_portal');
@@ -202,11 +202,13 @@ async function initMongoConnection() {
 initMongoConnection();
 
 // Periodically attempt reconnection if disconnected
-setInterval(() => {
-  if (!mongoStatus.connected) {
-    initMongoConnection().catch(() => {});
-  }
-}, 60000);
+if (!process.env.VERCEL) {
+  setInterval(() => {
+    if (!mongoStatus.connected) {
+      initMongoConnection().catch(() => {});
+    }
+  }, 60000);
+}
 
 // Helper to extract laptop client IP
 function getClientIp(req: express.Request): string {
