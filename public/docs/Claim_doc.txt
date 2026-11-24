@@ -1,0 +1,25 @@
+AUTONOMOUS EXAMINATION MANAGEMENT AND EVALUATION FRAMEWORK USING LLM-DRIVEN
+
+Claim 1
+An autonomous examination management and evaluation system for evaluating academic performance and examination workflows of educational entities, comprising: a data collection and preprocessing module, a feature extraction module using a Large Language Model (LLM), an autonomous evaluation and dummy number mapping module, a continuous assessment lock and CBCS grading module, and an explainable artificial intelligence (XAI) and institutional telemetry module configured to generate accurate, tamper-evident, and interpretable examination evaluation predictions.
+
+Claim 2
+The system as claimed in claim 1, wherein the data collection and preprocessing module integrates structured academic records, unstructured question paper textual data, and alternative examination attendance indicators, and performs normalization, standardization, tokenization, lemmatization, and stop-word removal for effective examination data preparation.
+
+Claim 3
+The system as claimed in claim 1, wherein the feature extraction module utilizes a Large Language Model (LLM) to generate semantic embeddings, cognitive complexity scores according to Revised Bloom's Taxonomy, and contextual syllabus topic features from unstructured question paper data including short-answer concepts, analytical derivations, and design problems.
+
+Claim 4
+The system as claimed in claim 1, wherein the autonomous evaluation and dummy number mapping module combines structured student enrollment data, question paper semantic embeddings, and invigilation attendance features using a cryptographic pseudonymization mechanism with attention-based parity verification to dynamically assign anonymized dummy barcodes to each answer script.
+
+Claim 5
+The system as claimed in claim 1, wherein the continuous assessment lock and CBCS grading module processes evaluated script features to generate a normalized academic score and classify student performance into predefined grade categories including Outstanding, Excellent, Very Good, Good, Above Average, Pass, and Re-appear under choice-based credit regulations.
+
+Claim 6
+The system as claimed in claim 1, wherein the explainable artificial intelligence (XAI) and institutional telemetry module utilizes SHAP (SHapley Additive exPlanations) and attention-based visualization techniques to provide question-level and course outcome (CO)-level interpretability of evaluation predictions and attainment scores.
+
+Claim 7
+The system as claimed in claim 1, wherein the framework adapts to dynamic academic environments by continuously incorporating evolving curricular regulations, revised syllabus outcome targets, and institutional accreditation indicators.
+
+Claim 8
+The system as claimed in claim 1, further comprising a decision support module configured to provide actionable insights, transparent course outcome attainment scores, and explanation-based recommendations to assist academic departments and controller of examinations committees in accreditation and institutional decision-making processes.

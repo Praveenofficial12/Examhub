@@ -1,0 +1,42 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>Claim doc</title>
+<style>
+  body { font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 1.5; margin: 1in; color: #000000; }
+  h1 { font-size: 14pt; text-align: center; text-transform: uppercase; font-weight: bold; margin-bottom: 24pt; }
+  h2 { font-size: 12pt; font-weight: bold; margin-top: 16pt; margin-bottom: 6pt; }
+  p { text-align: justify; margin-bottom: 12pt; }
+  .page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+  <h1>AUTONOMOUS EXAMINATION MANAGEMENT AND EVALUATION FRAMEWORK USING LLM-DRIVEN</h1>
+
+  <h2>Claim 1</h2>
+  <p>A multimodal financial risk assessment system for evaluating financial risk of entities, comprising: a data collection and preprocessing module, a feature extraction module using a Large Language Model (LLM), an autonomous evaluation and dummy number mapping module, a continuous assessment lock and CBCS grading module, and an explainable artificial intelligence (XAI) and institutional telemetry module configured to generate accurate, tamper-evident, and interpretable examination evaluation predictions.</p>
+
+  <h2>Claim 2</h2>
+  <p>The system as claimed in claim 1, wherein the data collection and preprocessing module integrates structured academic records, unstructured question paper textual data, and alternative examination attendance indicators, and performs normalization, standardization, tokenization, lemmatization, and stop-word removal for effective examination data preparation.</p>
+
+  <h2>Claim 3</h2>
+  <p>The system as claimed in claim 1, wherein the feature extraction module utilizes a Large Language Model (LLM) to generate semantic embeddings, cognitive complexity scores according to Revised Bloom's Taxonomy, and contextual syllabus topic features from unstructured question paper data including short-answer concepts, analytical derivations, and design problems.</p>
+
+  <h2>Claim 4</h2>
+  <p>The system as claimed in claim 1, wherein the autonomous evaluation and dummy number mapping module combines structured student enrollment data, question paper semantic embeddings, and invigilation attendance features using a cryptographic pseudonymization mechanism with attention-based parity verification to dynamically assign anonymized dummy barcodes to each answer script.</p>
+
+  <h2>Claim 5</h2>
+  <p>The system as claimed in claim 1, wherein the continuous assessment lock and CBCS grading module processes evaluated script features to generate a normalized academic score and classify student performance into predefined grade categories including Outstanding, Excellent, Very Good, Good, Above Average, Pass, and Re-appear under choice-based credit regulations.</p>
+
+  <div class="page-break"></div>
+
+  <h2>Claim 6</h2>
+  <p>The system as claimed in claim 1, wherein the explainable artificial intelligence (XAI) and institutional telemetry module utilizes SHAP (SHapley Additive exPlanations) and attention-based visualization techniques to provide question-level and course outcome (CO)-level interpretability of evaluation predictions and attainment scores.</p>
+
+  <h2>Claim 7</h2>
+  <p>The system as claimed in claim 1, wherein the framework adapts to dynamic academic environments by continuously incorporating evolving curricular regulations, revised syllabus outcome targets, and institutional accreditation indicators.</p>
+
+  <h2>Claim 8</h2>
+  <p>The system as claimed in claim 1, further comprising a decision support module configured to provide actionable insights, transparent course outcome attainment scores, and explanation-based recommendations to assist academic departments and controller of examinations committees in accreditation and institutional decision-making processes.</p>
+</body>
+</html>

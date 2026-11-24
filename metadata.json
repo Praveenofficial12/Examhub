@@ -1,0 +1,6 @@
+{
+  "name": "VSBEC Exam Control Center",
+  "description": "Autonomous Examination Management & COE Portal for V.S.B. Engineering College, Karur",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

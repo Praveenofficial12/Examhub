@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="creamSky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="48%" stop-color="#F7F1E6"/>
+      <stop offset="100%" stop-color="#EFE5D5"/>
+    </linearGradient>
+    <radialGradient id="warmGlow" cx="78%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#FDE68A" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#F5EFE6" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FAF7F2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="crimsonGlow" cx="15%" cy="82%" r="48%">
+      <stop offset="0%" stop-color="#781717" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FAF7F2" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gridLines" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#C7B9A5" stroke-width="0.6" stroke-opacity="0.22"/>
+    </pattern>
+  </defs>
+
+  <!-- Soft Cream Canvas -->
+  <rect width="1600" height="900" fill="url(#creamSky)"/>
+  <rect width="1600" height="900" fill="url(#gridLines)"/>
+  <rect width="1600" height="900" fill="url(#warmGlow)"/>
+  <rect width="1600" height="900" fill="url(#crimsonGlow)"/>
+
+  <!-- Subtle Academic Geometric Rings (Right Side Watermark) -->
+  <g transform="translate(1280 420)" fill="none" stroke="#B45309" stroke-opacity="0.12">
+    <circle r="340" stroke-width="1.5" stroke-dasharray="10 8"/>
+    <circle r="270" stroke-width="1"/>
+    <circle r="195" stroke-width="1.5" stroke-dasharray="4 6"/>
+  </g>
+
+  <!-- Subtle Classical University Colonnade & Library Arches (Bottom Architectural Silhouette) -->
+  <g fill="none" stroke="#781717" stroke-opacity="0.09" stroke-width="1.6">
+    <!-- Pediment & Roofline Left -->
+    <path d="M 40 720 L 260 620 L 480 720 Z" fill="#EADFCB" fill-opacity="0.35"/>
+    <rect x="65" y="720" width="390" height="18" fill="#E6D8C0" fill-opacity="0.4"/>
+    <rect x="85" y="738" width="22" height="162" fill="#E6D8C0" fill-opacity="0.35"/>
+    <rect x="148" y="738" width="22" height="162" fill="#E6D8C0" fill-opacity="0.35"/>
+    <rect x="211" y="738" width="22" height="162" fill="#E6D8C0" fill-opacity="0.35"/>
+    <rect x="274" y="738" width="22" height="162" fill="#E6D8C0" fill-opacity="0.35"/>
+    <rect x="337" y="738" width="22" height="162" fill="#E6D8C0" fill-opacity="0.35"/>
+    <rect x="400" y="738" width="22" height="162" fill="#E6D8C0" fill-opacity="0.35"/>
+
+    <!-- Open Book & Academic Leaf Motifs -->
+    <g transform="translate(1150 610)" stroke="#781717" stroke-opacity="0.14" stroke-width="1.8">
+      <path d="M 0 110 C 60 85, 125 85, 175 110 L 175 15 C 125 -5, 60 -5, 0 20 Z" fill="#FFFDF9" fill-opacity="0.5"/>
+      <path d="M 350 110 C 290 85, 225 85, 175 110 L 175 15 C 225 -5, 290 -5, 350 20 Z" fill="#FFFDF9" fill-opacity="0.5"/>
+      <line x1="30" y1="42" x2="145" y2="34"/>
+      <line x1="30" y1="62" x2="145" y2="54"/>
+      <line x1="30" y1="82" x2="120" y2="76"/>
+      <line x1="205" y1="34" x2="320" y2="42"/>
+      <line x1="205" y1="54" x2="320" y2="62"/>
+      <line x1="205" y1="74" x2="295" y2="80"/>
+    </g>
+
+    <!-- Graduation Cap Watermark Top Left -->
+    <g transform="translate(110 130) rotate(-8)" stroke="#781717" stroke-opacity="0.11" stroke-width="1.6">
+      <polygon points="110,15 220,55 110,95 0,55" fill="#F3E8D6" fill-opacity="0.4"/>
+      <path d="M 45 73 L 45 112 C 45 128, 175 128, 175 112 L 175 73"/>
+      <line x1="210" y1="59" x2="210" y2="115"/>
+      <circle cx="210" cy="120" r="5" fill="#B45309" fill-opacity="0.22"/>
+    </g>
+  </g>
+</svg>

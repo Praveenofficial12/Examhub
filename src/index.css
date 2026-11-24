@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* True A4 Portrait Paper Sheet Sizing (210mm x 297mm) for Live Word & Print Sheets */
+.a4-page-sheet {
+  width: 100%;
+  max-width: 210mm;
+  min-height: 297mm;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.a4-diagram-box {
+  font-family: 'JetBrains Mono', 'Courier New', Consolas, monospace;
+  white-space: pre;
+  overflow-x: auto;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+  .a4-page-sheet {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 auto !important;
+  }
+}
