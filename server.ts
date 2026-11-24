@@ -2929,19 +2929,14 @@ async function startServer() {
     console.log('[Server] Serving pre-built static assets from dist/ directory');
     app.use(express.static(distPath));
     app.get('*', (req, res, next) => {
-      if (req.path.startsWith('/api')) {
-        return next();
-      }
+      if (req.path.startsWith('/api')) return next();
       res.sendFile(path.resolve(distPath, 'index.html'));
     });
   } else {
     console.log('[Server] Initializing Vite dev middleware');
     try {
       const vite = await createViteServer({
-        server: {
-          middlewareMode: true,
-          hmr: false
-        },
+        server: { middlewareMode: true, hmr: false },
         appType: 'spa'
       });
       app.use(vite.middlewares);
@@ -2965,9 +2960,7 @@ async function startServer() {
     if (err.code === 'EADDRINUSE') {
       console.warn(`[Server] Port ${PORT} busy, retrying in 1s...`);
       setTimeout(() => {
-        try {
-          server.close();
-        } catch (_) {}
+        try { server.close(); } catch {}
         server.listen(PORT, '0.0.0.0');
       }, 1000);
     } else {
@@ -2976,7 +2969,21 @@ async function startServer() {
   });
 }
 
-startServer().catch((err) => {
-  console.error('Failed to start server:', err);
-  process.exit(1);
-});
+// Vercel invokes the exported Express app as a serverless function.
+// Do not open a persistent listener inside a Vercel function.
+if (process.env.VERCEL) {
+  if (isProd && hasDist) {
+    app.use(express.static(distPath));
+    app.get('*', (req, res, next) => {
+      if (req.path.startsWith('/api')) return next();
+      res.sendFile(path.resolve(distPath, 'index.html'));
+    });
+  }
+} else {
+  startServer().catch((err) => {
+    console.error('Failed to start server:', err);
+    process.exit(1);
+  });
+}
+
+export default app;
